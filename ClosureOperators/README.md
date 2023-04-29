@@ -13,6 +13,8 @@ Here are some less important examples. Let A = \{0, 1, 2\}, then the following a
 +  R = \{(0, 1)\}
 +  S = \{(0, 1), (1, 1)\}
 +  T = \{(0, 1), (1, 2), (2, 1)\}
++  < = \{(0, 1), (0, 2), (1, 2)\}
++  ≤ = \{(0, 0), (0, 1), (0, 2), (1, 1), (1, 2), (2, 2)\}
 
 Common notations for the expression (x, y) ∈ R are x R y (infix notation) and R x y (postfix notation).
 
@@ -25,7 +27,7 @@ The *transitive closure* of a relation R ⊆ A × A is the smallest relation on 
 
 ----------
 
-**Exercise 1**.  Let A = \{0, 1, 2\}.  Find the transitive closures of all the relations mentioned above: 1_A, 0_A, ∅, R, S, T.
+**Exercise 1**.  Let A = \{0, 1, 2\}.  Find the transitive closures of all the relations mentioned above: 1_A, 0_A, ∅, R, S, T, <, ≤.
 
 ------------
 
@@ -52,7 +54,7 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 
 **Solution 1**. 
 
-+  Notice that 1_A, 0_A, ∅, R, and S are all transitive relations so their transitive closures are just themselves: C 1_A = 1_A, C 0_A = 0_A, C ∅ = ∅, C R = R, and C S = S.
++  Notice that 1_A, 0_A, ∅, R, S, <, and ≤ are all transitive relations so their transitive closures are just themselves: C 1_A = 1_A, C 0_A = 0_A, C ∅ = ∅, C R = R, C S = S, C < = <, C ≤ = ≤.
 
    For example, if R x y, then x = 0 and y = 1 and for every z ∈ A, (y , z) ∉ R, so at most one antecedent of the transitive property holds---either R x y or R y z---but not both, so since the premise is false, the consequent is true.  The same argument applies to D.
    
@@ -84,5 +86,26 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 +  C is monotone.  Indeed, let R, S be relations on A and assume R ⊆ S.  By extensivity, S ⊆ C S, therefore R ⊆ C S.  Now, C S is transitive and C R is defined to be the *smallest* transitive relation containing R, therefore C R ⊆ C S. 
 
 +  C (C R) is the smallest transitive relation containing C R, but C R is already transitive, so it C (C R) = C R!
+
+
+-------------------------
+
+
+## Reflexive Closure
+
+Recall, a relation R on a set A is called *reflexive* provided ∀ x ∈ A → R x x.
+
+The *reflexive closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is reflexive.  This is very easy to compute, since it is simply R ∪ 0_A.  That is, reflexive closure of a relation R ⊆ A × A is simply R ∪ \{(x, x) : x ∈ A\}.
+
+
+## Symmetric Closure
+
+Recall, a relation R on a set A is called *symmetric* provided ∀ x, y ∈ A → R x y → R y x.
+
+The *symmetric closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is symmetric.  This is very easy to compute, since it is simply R ∪ R⃖ where R⃖:= \{(x, y) : (y, x) ∈ R\}. 
+
+
+
+
 
 
