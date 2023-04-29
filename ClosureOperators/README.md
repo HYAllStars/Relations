@@ -1,4 +1,4 @@
-# Notes on Transtive Closure
+# Notes on Closure Operators 
 
 Let A be any set.  A binary relation on A is any subset of A × A = \{(x, y) : x ∈ A, y ∈ A\}.
 
@@ -13,9 +13,11 @@ Here are some less important examples. Let A = \{0, 1, 2\}, then the following a
 +  R = \{(0, 1)\}
 +  S = \{(0, 1), (1, 1)\}
 +  T = \{(0, 1), (1, 2), (2, 1)\}
-+  D = \{(0, 0), (1, 1), (2, 2)\}  (equality)
 
 Common notations for the expression (x, y) ∈ R are x R y (infix notation) and R x y (postfix notation).
+
+
+## Transitive Closure
 
 Recall, a relation R on a set A is called *transitive* provided ∀ x, y, z ∈ A → R x y → R y z → R x z.
 
@@ -23,7 +25,7 @@ The *transitive closure* of a relation R ⊆ A × A is the smallest relation on 
 
 ----------
 
-**Exercise 1**.  Let A = \{0, 1, 2\}.  Find the transitive closures of the relations R, S, T, and D given above.
+**Exercise 1**.  Let A = \{0, 1, 2\}.  Find the transitive closures of all the relations mentioned above: 1_A, 0_A, ∅, R, S, T.
 
 ------------
 
@@ -50,9 +52,9 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 
 **Solution 1**. 
 
-+  Notice that R, S, and D are transitive so their transitive closures are themselves: C R = R, C S = S, C D = D.
++  Notice that 1_A, 0_A, ∅, R, and S are all transitive relations so their transitive closures are just themselves: C 1_A = 1_A, C 0_A = 0_A, C ∅ = ∅, C R = R, and C S = S.
 
-   Indeed, if R x y, then x = 0 and y = 1 and for every z ∈ A, (y , z) ∉ R, so at most one antecedent of the transitive property holds---either R x y or R y z---but not both, so since the premise is false, the consequent is true.  The same argument applies to D.
+   For example, if R x y, then x = 0 and y = 1 and for every z ∈ A, (y , z) ∉ R, so at most one antecedent of the transitive property holds---either R x y or R y z---but not both, so since the premise is false, the consequent is true.  The same argument applies to D.
    
    For S, the only way to fulfill the antecendents of the transitive property is to let x = 0, y = 1, z = 1, in which case the consequent of the transitive property (R 0 1) holds.
 
