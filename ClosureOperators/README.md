@@ -39,7 +39,7 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 
 -------------
 
-**Exercise 2**.  Prove that C is a closure operator.  That is, C satisfies the following three closure properties:
+**Exercise 2**.  Prove that C is a *closure operator*; that is, C satisfies the following three closure properties:
 
 + C is **extensive**: ∀ R ∈ ℙ(A × A) → R ⊆ C R.
 
@@ -73,7 +73,7 @@ The *symmetric closure* of a relation R ⊆ A × A is the smallest relation on A
 
 ## Solutions
 
-**Solution 1**. 
+**Solution to Exercise 1**. 
 
 +  Notice that 1<sub>A</sub>, 0<sub>A</sub>, ∅, R, S, <, and ≤ are all transitive relations so their transitive closures are just themselves: C 1<sub>A</sub> = 1<sub>A</sub>, C 0<sub>A</sub> = 0<sub>A</sub>, C ∅ = ∅, C R = R, C S = S, C < = <, C ≤ = ≤.
 
@@ -100,7 +100,7 @@ The *symmetric closure* of a relation R ⊆ A × A is the smallest relation on A
    C T = \{(0, 1), (0, 2), (1, 1), (1, 2), (2, 1), (2, 2)\}.
 
 
-**Solution 2**.
+**Solution to Exercise 2**.
 
 +  That C is extensive is obvious from the definition of C R as the smallest relation *that contains R*.  That is, R ⊆ C R is baked right into the definition.
 
