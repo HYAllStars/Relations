@@ -4,8 +4,8 @@ Let A be any set.  A binary relation on A is any subset of A × A = \{(x, y) : x
 
 Here are some important examples of binary relations on A:
 
-+  1_A := A × A = the "all" relation (1 subscript A)
-+  0_A := D = \{(x, x) : x ∈ A\} = the "equality" relation; aka the "identity" or "diagonal" relation
++  1<sub>A</sub> := A × A = the "all" relation
++  0<sub>A</sub> := D = \{(x, x) : x ∈ A\} = the "equality" relation; aka the "identity" or "diagonal" relation
 +  ∅ = the empty relation
 
 Here are some less important examples. Let A = \{0, 1, 2\}, then the following are relations on A:
@@ -27,7 +27,7 @@ The *transitive closure* of a relation R ⊆ A × A is the smallest relation on 
 
 ----------
 
-**Exercise 1**.  Let A = \{0, 1, 2\}.  Find the transitive closures of all the relations mentioned above: 1_A, 0_A, ∅, R, S, T, <, ≤.
+**Exercise 1**.  Let A = \{0, 1, 2\}.  Find the transitive closures of all the relations mentioned above: 1<sub>A</sub>, 0<sub>A</sub>, ∅, R, S, T, <, ≤.
 
 ------------
 
@@ -54,7 +54,7 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 
 **Solution 1**. 
 
-+  Notice that 1_A, 0_A, ∅, R, S, <, and ≤ are all transitive relations so their transitive closures are just themselves: C 1_A = 1_A, C 0_A = 0_A, C ∅ = ∅, C R = R, C S = S, C < = <, C ≤ = ≤.
++  Notice that 1<sub>A</sub>, 0<sub>A</sub>, ∅, R, S, <, and ≤ are all transitive relations so their transitive closures are just themselves: C 1<sub>A</sub> = 1<sub>A</sub>, C 0<sub>A</sub> = 0<sub>A</sub>, C ∅ = ∅, C R = R, C S = S, C < = <, C ≤ = ≤.
 
    For example, if R x y, then x = 0 and y = 1 and for every z ∈ A, (y , z) ∉ R, so at most one antecedent of the transitive property holds---either R x y or R y z---but not both, so since the premise is false, the consequent is true.  The same argument applies to D.
    
@@ -95,7 +95,7 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 
 Recall, a relation R on a set A is called *reflexive* provided ∀ x ∈ A → R x x.
 
-The *reflexive closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is reflexive.  This is very easy to compute, since it is simply R ∪ 0_A.  That is, reflexive closure of a relation R ⊆ A × A is simply R ∪ \{(x, x) : x ∈ A\}.
+The *reflexive closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is reflexive.  This is very easy to compute, since it is simply R ∪ 0<sub>A</sub>.  That is, reflexive closure of a relation R ⊆ A × A is simply R ∪ \{(x, x) : x ∈ A\}.
 
 
 ## Symmetric Closure
