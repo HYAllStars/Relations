@@ -93,9 +93,9 @@ The *symmetric closure* of a relation R ⊆ A × A is the smallest relation on A
    
    The union of these is U₁ = \{(0, 1), (0, 2), (1, 1), (1, 2), (2, 1), (2, 2)\} and clearly U₁ must be contained in the transitive closure of T.
    
-   What else could be in C T?  To find out, notice that we need only consider each pair of pairs in U₁ and see what they generate via the transitive property. 
+   What else could be in C T?  To find out, we need only consider each pair of pairs in U₁ and see what they generate via the transitive property. (We need not consider those we already looked at above.) If any new pairs arise that were not already in U₁, then we will define a new set U₂ which will include these new pairs, along with all the pairs that were already in U₁.  We continue like that until no new pairs are generated. 
    
-   That is, consider the transitive closure of every two element subset of U₁. (We need not consider those we already looked at above.) Note that all of these closures are already contained in U₁, so U₁ is in fact the transitive closure of T. That is,
+   In the present case, each pair of pairs from U₁ generates an element of U₁, thus U₁ is already the transitive closure of T:
 
    C T = \{(0, 1), (0, 2), (1, 1), (1, 2), (2, 1), (2, 2)\}.
 
