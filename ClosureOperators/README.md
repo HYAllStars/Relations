@@ -48,6 +48,27 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 + C is **idempotent**: ∀ R ∈ ℙ(A × A) → C (C R) = C R.
 
 
+-------------------------
+
+
+## Reflexive Closure
+
+Recall, a relation R on a set A is called *reflexive* provided ∀ x ∈ A → R x x.
+
+The *reflexive closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is reflexive.  This is very easy to compute, since it is simply R ∪ 0<sub>A</sub>.  That is, reflexive closure of a relation R ⊆ A × A is simply R ∪ \{(x, x) : x ∈ A\}.
+
+
+## Symmetric Closure
+
+Recall, a relation R on a set A is called *symmetric* provided ∀ x, y ∈ A → R x y → R y x.
+
+The *symmetric closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is symmetric.  This is very easy to compute, since it is simply R ∪ R⃖ where R⃖:= \{(x, y) : (y, x) ∈ R\}. 
+
+
+
+
+
+
 -------------------
 
 ## Solutions
@@ -86,26 +107,5 @@ That is, for each relation R ∈ ℙ(A × A), the transtive closure of R is the 
 +  C is monotone.  Indeed, let R, S be relations on A and assume R ⊆ S.  By extensivity, S ⊆ C S, therefore R ⊆ C S.  Now, C S is transitive and C R is defined to be the *smallest* transitive relation containing R, therefore C R ⊆ C S. 
 
 +  C (C R) is the smallest transitive relation containing C R, but C R is already transitive, so it C (C R) = C R!
-
-
--------------------------
-
-
-## Reflexive Closure
-
-Recall, a relation R on a set A is called *reflexive* provided ∀ x ∈ A → R x x.
-
-The *reflexive closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is reflexive.  This is very easy to compute, since it is simply R ∪ 0<sub>A</sub>.  That is, reflexive closure of a relation R ⊆ A × A is simply R ∪ \{(x, x) : x ∈ A\}.
-
-
-## Symmetric Closure
-
-Recall, a relation R on a set A is called *symmetric* provided ∀ x, y ∈ A → R x y → R y x.
-
-The *symmetric closure* of a relation R ⊆ A × A is the smallest relation on A that contains R and is symmetric.  This is very easy to compute, since it is simply R ∪ R⃖ where R⃖:= \{(x, y) : (y, x) ∈ R\}. 
-
-
-
-
 
 
